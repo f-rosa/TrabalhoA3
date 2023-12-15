@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Run</title>
+</head>
+<body>
+  <div class="game">
+    <img class="demonrun" src="img/demonrun.gif" alt="demonrun">
+    <img class="monstro" src="img/monstro.gif" alt="monstro">
+    <img class="clouds" src="img/clouds.png" alt="nuvem">
+    <div id="score">HS: 0</div>
+    <div id="start-message" class="start-message">Press Enter</div>
+    <button class="start" onclick="hideStartMessage()">Iniciar</button>
+  </div>
+
+  <div class="game-over">
+    <h1>Game Over</h1>
+    <div>
+      <button onclick="restartGame()">Reiniciar</button>
+      <button onclick="saveScore()">Salvar Pontuação</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
